@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.itcast.entity.User" table="t_uu"  >
+        <id name="uid" type="java.lang.Integer">
+            <column name="uid" length="10"/>
+            <generator class="native"/>  <!-- 设为主键并自动增长   name是类的属性 column是表的字段 -->
+        </id>
+        <property name="username" column="username" type="java.lang.String" length="10"/>
+        <property name="password" column="password" type="java.lang.String" length="10"/>
+        <property name="address" column="address" type="java.lang.String" length="10"/>
+    </class>
+</hibernate-mapping>
+<!--maven-->
+        <!--git-->
